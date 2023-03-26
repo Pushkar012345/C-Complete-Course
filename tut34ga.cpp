@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class point{
+    int x,y,z;
+    public:
+    point(int x1,int y1){
+        x=x1;
+        y=y1;
+    }
+    point(point &p1){
+        x=p1.x;
+        y=p1.y;
+    }
+    int getX(){
+        return x;
+    }
+    int getY(){
+        return y;
+    }
+
+
+
+};
+int main(){
+    point p1(10,30);
+    point p2=p1;
+
+    cout<<p1.getX()<<p1.getY();
+    cout<<p2.getX()<<p2.getY();
+    return 0;
+
+    return 0;
+
+}
